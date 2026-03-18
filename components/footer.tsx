@@ -60,7 +60,7 @@ export function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-serif font-bold tracking-wide text-gold-gradient">
-                  ZENITH
+                  NITA
                 </span>
                 <span className="text-[10px] tracking-[0.3em] text-muted-foreground uppercase">
                   Gold Dealers
@@ -155,7 +155,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground text-center md:text-left">
-            © {new Date().getFullYear()} Zenith Gold Dealers. All rights reserved.
+            © {new Date().getFullYear()} NITA Gold Dealers. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground text-center md:text-right max-w-md">
             Trading precious metals involves risk. Past performance is not indicative 

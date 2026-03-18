@@ -47,7 +47,7 @@ export function CtaSection() {
           </h2>
 
           <p className="reveal text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Join thousands of satisfied investors who trust Zenith Gold Dealers 
+            Join thousands of satisfied investors who trust NITA Gold Dealers 
             for their precious metal needs. Get started today with a free consultation.
           </p>
 

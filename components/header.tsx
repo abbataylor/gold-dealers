@@ -59,7 +59,7 @@ export function Header() {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-serif font-bold tracking-wide text-gold-gradient">
-                ZENITH
+                NITA
               </span>
               <span className="text-[10px] tracking-[0.3em] text-muted-foreground uppercase">
                 Gold Dealers

@@ -20,7 +20,7 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email Us",
-    value: "info@zenithgold.com\nsupport@zenithgold.com",
+    value: "info@NITAgold.com\nsupport@NITAgold.com",
   },
   {
     icon: Clock,

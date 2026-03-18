@@ -57,7 +57,7 @@ export function AboutSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <span className="reveal inline-block text-sm font-medium text-primary uppercase tracking-widest">
-                About Zenith
+                About NITA
               </span>
               <h2 className="reveal text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground leading-tight">
                 A Legacy of Trust in{" "}
@@ -67,7 +67,7 @@ export function AboutSection() {
 
             <div className="reveal space-y-4 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                For over 15 years, Zenith Gold Dealers has been the premier destination 
+                For over 15 years, NITA Gold Dealers has been the premier destination 
                 for discerning investors seeking to safeguard their wealth through 
                 precious metals.
               </p>

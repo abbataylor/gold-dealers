@@ -12,7 +12,7 @@ const testimonials = [
     location: "New York, USA",
     image: "/testimonials/client-1.jpg",
     rating: 5,
-    text: "Zenith Gold Dealers has transformed the way I invest in precious metals. Their transparent pricing and exceptional customer service make them stand out in the industry. I've been a client for 5 years and couldn't be happier.",
+    text: "NITA Gold Dealers has transformed the way I invest in precious metals. Their transparent pricing and exceptional customer service make them stand out in the industry. I've been a client for 5 years and couldn't be happier.",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const testimonials = [
     location: "Singapore",
     image: "/testimonials/client-2.jpg",
     rating: 5,
-    text: "As a portfolio manager handling significant precious metal allocations, I need a partner I can trust. Zenith delivers on every front - competitive rates, fast execution, and secure storage options. Simply the best in the business.",
+    text: "As a portfolio manager handling significant precious metal allocations, I need a partner I can trust. NITA delivers on every front - competitive rates, fast execution, and secure storage options. Simply the best in the business.",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const testimonials = [
     location: "Zurich, Switzerland",
     image: "/testimonials/client-3.jpg",
     rating: 5,
-    text: "The level of professionalism and attention to detail at Zenith is remarkable. They understand the unique needs of high-net-worth families and provide tailored solutions that give us complete peace of mind.",
+    text: "The level of professionalism and attention to detail at NITA is remarkable. They understand the unique needs of high-net-worth families and provide tailored solutions that give us complete peace of mind.",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const testimonials = [
     location: "Dubai, UAE",
     image: "/testimonials/client-4.jpg",
     rating: 5,
-    text: "We chose Zenith for our corporate gold reserves and it was the right decision. Their institutional-grade services, combined with unbeatable security measures, make them the obvious choice for serious investors.",
+    text: "We chose NITA for our corporate gold reserves and it was the right decision. Their institutional-grade services, combined with unbeatable security measures, make them the obvious choice for serious investors.",
   },
 ]
 
@@ -96,7 +96,7 @@ export function TestimonialsSection() {
             <span className="text-gold-gradient">Industry Leaders</span>
           </h2>
           <p className="reveal text-lg text-muted-foreground">
-            Hear what our clients have to say about their experience with Zenith Gold Dealers.
+            Hear what our clients have to say about their experience with NITA Gold Dealers.
           </p>
         </div>
 

@@ -84,7 +84,7 @@ export function SecuritySection() {
             </div>
 
             <p className="reveal text-lg text-muted-foreground leading-relaxed">
-              At Zenith Gold Dealers, security isn{"'"}t just a feature—it{"'"}s our foundation. 
+              At NITA Gold Dealers, security isn{"'"}t just a feature—it{"'"}s our foundation. 
               We employ industry-leading security measures to ensure your investments 
               and personal information remain completely safe.
             </p>

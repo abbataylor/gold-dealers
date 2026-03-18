@@ -14,11 +14,11 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Zenith Gold Dealers | Premium Gold Trading & Investment',
+  title: 'NITA Gold Dealers | Premium Gold Trading & Investment',
   description: 'Your trusted partner in premium gold trading. Buy, sell, and store gold with confidence. Competitive rates, secure transactions, and expert advisory services.',
   keywords: ['gold trading', 'gold investment', 'buy gold', 'sell gold', 'gold dealers', 'precious metals'],
   openGraph: {
-    title: 'Zenith Gold Dealers | Premium Gold Trading & Investment',
+    title: 'NITA Gold Dealers | Premium Gold Trading & Investment',
     description: 'Your trusted partner in premium gold trading. Buy, sell, and store gold with confidence.',
     type: 'website',
   },

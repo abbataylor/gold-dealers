@@ -81,7 +81,7 @@ export function WhyUsSection() {
             Why Choose Us
           </span>
           <h2 className="reveal text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-6">
-            The Zenith{" "}
+            The NITA{" "}
             <span className="text-gold-gradient">Advantage</span>
           </h2>
           <p className="reveal text-lg text-muted-foreground">
