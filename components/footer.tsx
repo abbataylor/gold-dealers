@@ -11,16 +11,16 @@ const footerLinks = {
     { label: "Press", href: "#" },
   ],
   services: [
-    { label: "Buy Gold", href: "#services" },
-    { label: "Sell Gold", href: "#services" },
-    { label: "Gold Storage", href: "#services" },
-    { label: "Investment Advisory", href: "#services" },
+    { label: "Buy Gold", href: "/#services" },
+    { label: "Sell Gold", href: "/#services" },
+    { label: "Gold Storage", href: "/#services" },
+    { label: "Investment Advisory", href: "/#services" },
   ],
   resources: [
-    { label: "Gold Price Charts", href: "#prices" },
+    { label: "Gallery", href: "/gallery" },
+    { label: "Gold Price Charts", href: "/#prices" },
     { label: "Market Analysis", href: "#" },
     { label: "Investment Guide", href: "#" },
-    { label: "FAQ", href: "#" },
   ],
   legal: [
     { label: "Privacy Policy", href: "#" },

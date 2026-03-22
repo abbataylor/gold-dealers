@@ -6,12 +6,13 @@ import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#prices", label: "Live Prices" },
-  { href: "#why-us", label: "Why Us" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#services", label: "Services" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/#prices", label: "Live Prices" },
+  { href: "/#why-us", label: "Why Us" },
+  { href: "/#testimonials", label: "Testimonials" },
+  { href: "/#contact", label: "Contact" },
 ]
 
 export function Header() {
@@ -90,8 +91,8 @@ export function Header() {
               <Phone className="w-4 h-4" />
               <span>+1 (234) 567-890</span>
             </a>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-6">
-              Get a Quote
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-6" asChild>
+              <Link href="/#contact">Get a Quote</Link>
             </Button>
           </div>
 
@@ -134,8 +135,10 @@ export function Header() {
                 <Phone className="w-4 h-4" />
                 <span>+1 (234) 567-890</span>
               </a>
-              <Button className="w-full bg-primary text-primary-foreground">
-                Get a Quote
+              <Button className="w-full bg-primary text-primary-foreground" asChild>
+                <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                  Get a Quote
+                </Link>
               </Button>
             </div>
           </div>

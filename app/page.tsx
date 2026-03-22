@@ -11,6 +11,8 @@ import { CtaSection } from "@/components/cta-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { ParallaxDivider } from "@/components/parallax-divider"
+import { PromoImageSlideshow } from "@/components/promo-image-slideshow"
+import { HomeGalleryPreview } from "@/components/home-gallery-preview"
 
 export default function Home() {
   return (
@@ -18,7 +20,17 @@ export default function Home() {
       <Header />
       <HeroSection />
       <PriceTicker />
+      <section className="border-y border-border bg-charcoal py-6 md:py-8">
+        <div className="container mx-auto px-4 lg:px-8">
+          <p className="mb-4 text-center text-sm font-medium uppercase tracking-widest text-primary">
+            More from our showroom — auto-plays; use arrows to browse
+          </p>
+          <PromoImageSlideshow variant="banner" maxSlides={6} />
+        </div>
+      </section>
       <AboutSection />
+
+      <HomeGalleryPreview />
       
       {/* Parallax Divider 1 - After About */}
       <ParallaxDivider
