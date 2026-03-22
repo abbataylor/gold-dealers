@@ -18,7 +18,7 @@ const footerLinks = {
   ],
   resources: [
     { label: "Gallery", href: "/gallery" },
-    { label: "Gold Price Charts", href: "/#prices" },
+    { label: "Photo spotlight", href: "/#photo-slideshow" },
     { label: "Market Analysis", href: "#" },
     { label: "Investment Guide", href: "#" },
   ],

@@ -23,21 +23,26 @@ export interface PromoImageSlideshowProps {
   variant?: "hero" | "banner"
   /** Limit how many photos rotate (e.g. mid-page strip). Defaults to all. */
   maxSlides?: number
+  /** Start at this index in the catalog so multiple slideshows show different photos. */
+  startIndex?: number
   className?: string
 }
 
 export function PromoImageSlideshow({
   variant = "hero",
   maxSlides,
+  startIndex = 0,
   className,
 }: PromoImageSlideshowProps) {
-  const slides = React.useMemo(
-    () =>
-      maxSlides != null
-        ? SITE_DECOR_IMAGES.slice(0, maxSlides)
-        : [...SITE_DECOR_IMAGES],
-    [maxSlides]
-  )
+  const slides = React.useMemo(() => {
+    const n = SITE_DECOR_IMAGES.length
+    const start = ((startIndex % n) + n) % n
+    const count = maxSlides != null ? maxSlides : n
+    return Array.from({ length: count }, (_, i) => ({
+      src: SITE_DECOR_IMAGES[(start + i) % n]!,
+      captionIdx: start + i,
+    }))
+  }, [maxSlides, startIndex])
   const [api, setApi] = React.useState<CarouselApi>()
   const [current, setCurrent] = React.useState(0)
   const [paused, setPaused] = React.useState(false)
@@ -84,11 +89,12 @@ export function PromoImageSlideshow({
         <CarouselContent
           className={cn("-ml-0", !isHero && "rounded-none")}
         >
-          {slides.map((src, index) => {
+          {slides.map((slide, index) => {
             const active = current === index
+            const { src, captionIdx } = slide
             return (
               <CarouselItem
-                key={src}
+                key={`${src}-${captionIdx}`}
                 className={cn("basis-full pl-0", !isHero && "min-h-0")}
               >
                 <div
@@ -107,7 +113,7 @@ export function PromoImageSlideshow({
                   >
                     <Image
                       src={src}
-                      alt={`${getPromoTagline(index)} — NITA Gold Dealers`}
+                      alt={`${getPromoTagline(captionIdx)} — NITA Gold Dealers`}
                       fill
                       sizes={
                         isHero
@@ -115,7 +121,7 @@ export function PromoImageSlideshow({
                           : "100vw"
                       }
                       className="object-cover"
-                      priority={variant === "hero" && index === 0}
+                      priority={variant === "hero" && index === 0 && startIndex === 0}
                     />
                   </div>
 
@@ -132,7 +138,7 @@ export function PromoImageSlideshow({
                         isHero ? "text-xl sm:text-2xl md:text-3xl" : "text-lg sm:text-2xl md:text-3xl"
                       )}
                     >
-                      {getPromoTagline(index)}
+                      {getPromoTagline(captionIdx)}
                     </p>
                     <p className="mt-1 text-sm text-white/85 sm:text-base">
                       Questions? Reach out — we respond fast.

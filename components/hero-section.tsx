@@ -114,7 +114,7 @@ export function HeroSection() {
                   className="border-primary/30 px-8 py-6 text-lg text-foreground hover:border-primary/50 hover:bg-primary/10"
                   asChild
                 >
-                  <Link href="#prices">View Live Prices</Link>
+                  <Link href="/#photo-slideshow">View photo spotlight</Link>
                 </Button>
               </div>
 
